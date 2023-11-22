@@ -94,8 +94,9 @@ public function edit(Product $product)
         // Update image only if a new one is provided
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('product_images', 'public');
-            $product->image_path = $imagePath;
+            $productData['image_path'] = $imagePath;
         }
+        
 
         $product->save();
 

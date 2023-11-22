@@ -136,7 +136,7 @@
                             </div>
                             
                             <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+                        </div>  
                         <div class="modal-body d-flex justify-content-center align-items-center">
                             <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="img-fluid" style="max-height: 350px; max-width: 100%;">
                         </div>
