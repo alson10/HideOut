@@ -5,8 +5,8 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
         <!-- Email Address -->
+        <center><img src="{{ asset('assets/images/bilog_logo.png') }}" style="width:250px;"></center>
         <div>
-        <center><img src="{{ asset('assets/images/hideout_logo.jpg') }}" style="width:350px;"> </center><br>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />

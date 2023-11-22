@@ -27,7 +27,7 @@
          <header class="header_section">
             <div class="container">
                <nav class="navbar sticky-top navbar-expand-sm custom_nav-container ">
-                  <a class="navbar-brand" href="#"><img width="150" src="{{ asset('assets/images/dulaypartyneeds.png') }}" alt="#" /></a>
+                  <a class="navbar-brand" href="#"><img width="100" src="{{ asset('assets/images/bilog_logo.png') }}" alt="#" /></a>
                   <!-- <h2>Dulay Party Needs</h2>s -->
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
@@ -59,7 +59,7 @@
          <!-- slider section -->
          <section class="slider_section ">
             <div class="slider_bg_box">
-               <img src="{{ asset('assets/images/bg.png') }}" alt="">
+               <img src="{{ asset('assets/images/image-2.jpg') }}" alt="">
             </div>
             <div id="customCarousel1" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
@@ -93,7 +93,7 @@
          <!-- end slider section -->
       </div>
       <!-- why section -->
-      <section class="why_section layout_padding">
+      {{-- <section class="why_section layout_padding">
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
@@ -338,7 +338,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> --}}
       <!-- end why section -->
       
       <!-- arrival section -->
@@ -346,7 +346,7 @@
          <div class="container">
             <div class="box">
                <div class="arrival_bg_box">
-                  <img src="{{ asset('assets/images/arrival-bg.png') }}" alt="">
+                  <img src="{{ asset('assets/images/image-3.jpg') }}" alt="">
                </div>
                <div class="row">
                   <div class="col-md-6 ml-auto">
@@ -355,11 +355,11 @@
                            About us
                         </h2>
                      </div>
-                     <p style="margin-top: 20px;margin-bottom: 30px;">
-                         <b>Dulay Party Needs</b> is your all-in-one destination for celebration essentials. From delectable cakes to vibrant balloons, we've got you covered. Explore curated packages for special occasions like Valentine's Day, ensuring your moments are effortlessly extraordinary. Celebrate with quality products and thoughtful curation at Dulay Party Needs, where every detail is designed to make your festivities memorable.
+                     <p style="margin-top: 20px;margin-bottom: 30px; text-align:justify">
+                     <b>Hideout Resto Bar</b> invites you to embark on a culinary journey where exquisite flavors meet a vibrant ambiance. Our establishment is your haven for delightful evenings, offering a diverse menu of mouthwatering dishes and handcrafted cocktails. Whether you're seeking a cozy spot for a romantic dinner or a lively atmosphere to unwind with friends, Hideout Resto Bar caters to every occasion. Indulge in the perfect blend of exceptional cuisine and an inviting setting, making each visit a memorable escape. Join us at Hideout Resto Bar, where every moment is an opportunity to savor the essence of good food and great company.
                      </p>
                      <a href="{{ route('login') }}">
-                     Shop Now
+                     JOIN US
                      </a>
                   </div>
                </div>
@@ -403,12 +403,12 @@
                <div class="col-md-4">
                    <div class="full">
                       <div class="logo_footer">
-                        <a href="#"><img width="150" src="{{ asset('assets/images/dulaypartyneeds.png') }}" alt="#" /></a>
+                        <a href="#"><img width="150" src="{{ asset('assets/images/bilog_logo.png') }}" alt="#" /></a>
                       </div>
                       <div class="information_f">
-                        <p><strong>ADDRESS:</strong> Municipal St, San Nicolas, Pangasinan</p>
-                        <p><strong>TELEPHONE:</strong> 0920 741 1367</p>
-                        <p><strong>EMAIL:</strong> dulaypartyneeds@gmail.com</p>
+                        <p><strong>ADDRESS:</strong> 237 Carmen - Alcala Rd, Santo Tomas, 2441 Pangasinan, 2426</p>
+                        <p><strong>TELEPHONE:</strong> 0907 426 5482</p>
+                        <p><strong>EMAIL:</strong> hideout@gmail.com</p>
                       </div>
                    </div>
                </div>
@@ -469,7 +469,7 @@
       </footer>
       <!-- footer end -->
       <div class="cpy_">
-         <p class="mx-auto">© 2023 All Rights Reserved By <a href="https://html.design/">Buca Company</a><br>
+         <p class="mx-auto">© 2023 All Rights Reserved By <a href="https://html.design/">Hide Out</a><br>
          </p>
       </div>
       <!-- jQery -->

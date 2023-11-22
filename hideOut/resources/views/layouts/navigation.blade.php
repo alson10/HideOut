@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('welcome') }}">
-                    <img src="{{ asset('assets/images/dulaypartyneeds.png') }}" height="60px" width="60px">
+                    <img src="{{ asset('assets/images/bilog_logo.png') }}" height="100px" width="60px">
                     </a>
                 </div>
 

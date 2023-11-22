@@ -1,7 +1,7 @@
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
-        <center><img src="{{ asset('assets/images/dulaypartyneeds.png') }}" style="width:200px;"> </center><br>
+        <center><img src="{{ asset('assets/images/bilog_logo.png') }}" style="width:250px;"></center>
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
