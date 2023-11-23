@@ -114,7 +114,7 @@
                                         <div class="row mb-3">
                                             <div class="col-md-2">
                                                 @if ($orderItem->image_path)
-                                                    <img src="{{ asset('storage/' . $orderItem->image_path) }}" alt="Product Image" style="max-width: 100px">
+                                                    <center><img src="{{ asset($orderItem->image_path) }}" alt="Product Image" style="max-width: 150px; height: 150px;"></center>
                                                 @else
                                                     No Image
                                                 @endif
@@ -185,7 +185,7 @@
                                         <div class="row mb-3">
                                             <div class="col-md-2">
                                                 @if ($orderItem->image_path)
-                                                    <img src="{{ asset('storage/' . $orderItem->image_path) }}" alt="Product Image" style="max-width: 100px">
+                                                    <center><img src="{{ asset($orderItem->image_path) }}" alt="Product Image" style="max-width: 100px"></center>
                                                 @else
                                                     No Image
                                                 @endif
@@ -269,7 +269,7 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-2">
                                                     @if ($orderItem->image_path)
-                                                        <img src="{{ asset('storage/' . $orderItem->image_path) }}" alt="Product Image" style="max-width: 100px">
+                                                       <center> <img src="{{ asset($orderItem->image_path) }}" alt="Product Image" style="max-width: 150px; height: 150px;"></center>
                                                     @else
                                                         No Image
                                                     @endif

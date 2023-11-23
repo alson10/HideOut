@@ -77,7 +77,7 @@
                     <tr class="text-center">
                         <td class="px-4 py-2 border">
                             <center>
-                                <img src="{{ $item->image_path }}" style="max-width: 100px; height: auto;">
+                                <img src="{{ $item->image_path }}" style="max-width: 100px; height: 100px;">
                               
                             </center>
                         </td>

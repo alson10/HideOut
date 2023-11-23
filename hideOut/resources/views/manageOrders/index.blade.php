@@ -18,7 +18,6 @@
             {{ __('Manage Orders') }}
         </h2>
     </x-slot>
-    
     <div class="py-6">
         <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
             
@@ -56,7 +55,6 @@
                                 <th class="px-4 py-2 bg-gray-100 border">Order ID</th>
                                 <th class="px-4 py-2 bg-gray-100 border">User ID</th>
                                 <th class="px-4 py-2 bg-gray-100 border">Contact</th>
-                                <th class="px-4 py-2 bg-gray-100 border">Address</th>
                                 <th class="px-4 py-2 bg-gray-100 border">Delivery</th>
                                 <th class="px-4 py-2 bg-gray-100 border">Status</th>
                                 <th class="px-4 py-2 bg-gray-100 border">Date Ordered</th>
@@ -69,9 +67,7 @@
                                     <td class="px-4 py-2 border">{{ $order->id }}</td>
                                     <td class="px-4 py-2 border">{{ $order->user_id }}</td>
                                     <td class="px-4 py-2 border">{{ $order->contact }}</td>
-                                    <td class="px-4 py-2 border">
-                                        {{ $order->address }}
-                                    </td>
+                                 
                                      <td class="px-4 py-2 border">
                                         {{ $order->delivery }}
                                     </td>
@@ -149,9 +145,9 @@
                                     $totalAmount = 0;
                                 @endphp
                                         @foreach ($order->orderItems as $orderItem)
-                                            <div class="row mb-3">
-                                                <div class="col-md-2">
-                                                    <img src="{{ asset('storage/' . $orderItem->image_path) }}" alt="Product Image" width="60px">
+                                            <div class="row mb-3 d-flex align-items-center justify-content-center">
+                                                <div class="col-md-2 ">
+                                                  <img src="{{ asset($orderItem->image_path) }}" alt="Product Image" style="object-fit: cover; width: 200px; height: 120px;">
                                                 </div>
                                                 <div class="col-md-4">
                                                     <p>{{ $orderItem->product_name }}</p>

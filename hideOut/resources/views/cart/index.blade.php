@@ -146,7 +146,7 @@
                                                                     <tr>
                                                                         <td>
                                                                             @if ($cartItem->product)
-                                                                                <img src="{{ asset('storage/' . $cartItem->product->image_path) }}" alt="{{ $cartItem->product->name }}" style="max-width: 80px; max-height: 80px;">
+                                                                                <img src="{{ asset($cartItem->product->image_path) }}" alt="{{ $cartItem->product->name }}" style="max-width: 80px; max-height: 80px;">
                                                                             @else
                                                                                 Product not available (ID: {{ $cartItem->product_id }})
                                                                             @endif

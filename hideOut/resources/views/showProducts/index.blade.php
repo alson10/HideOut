@@ -44,7 +44,7 @@
          <div class="col-md-2 mb-2 mt-5">
             <div class="card" style="width: 100%; height: 100%;">
                 <div class="image-container">
-                    <img src="{{ asset($product->image_path) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 150px;" alt="{{ $product->name }}">
+                    <img src="{{ asset($product->image_path) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 150px; padding:10px;" alt="{{ $product->name }}">
                 </div>
                 <div class="card-body">
                     <h2 class="card-title"><b>{{ $product->name }}</b></h2>
@@ -109,7 +109,7 @@
             <div class="col-md-2 mb-2 mt-5">
                 <div class="card" style="width: 100%; height: 100%;">
                     <div class="image-container">
-                        <img src="{{ asset('storage/' . $product->image_path) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 150px;"  alt="{{ $product->name }}">
+                        <img src="{{ asset($product->image_path) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 150px;"  alt="{{ $product->name }}">
                     </div>
                     <div class="card-body">
                         <h2 class="card-title"><b>{{ $product->name }}</b></h2>
