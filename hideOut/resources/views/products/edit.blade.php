@@ -102,14 +102,14 @@
                             </div> -->
                             <div class="mb-4">
                                 <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Current Image:</label>
-                                <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" style="max-width: 200px; max-height: 200px;">
+                                <img src="{{ asset($product->image_path) }}" alt="{{ $product->name }}" style="max-width: 200px; max-height: 200px;">
                                 @error('image')
                                     <div class="text-red-600 text-sm">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="mb-4">
                                 <label for="image" class="block text-gray-700 text-sm font-bold mb-2">New Image:</label>
-                                <input type="file" name="image" id="image" accept="image/*" class="w-full border-gray-300 rounded-md shadow-sm">
+                                <input type="file" name="image_path" id="image" accept="image/*" class="w-full border-gray-300 rounded-md shadow-sm">
                                 @error('image')
                                     <div class="text-red-600 text-sm">{{ $message }}</div>
                                 @enderror

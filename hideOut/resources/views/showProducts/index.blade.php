@@ -44,7 +44,7 @@
          <div class="col-md-2 mb-2 mt-5">
             <div class="card" style="width: 100%; height: 100%;">
                 <div class="image-container">
-                    <img src="{{ asset('storage/' . $product->image_path) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 150px;" alt="{{ $product->name }}">
+                    <img src="{{ asset($product->image_path) }}" class="card-img-top img-fluid" style="object-fit: cover; height: 150px;" alt="{{ $product->name }}">
                 </div>
                 <div class="card-body">
                     <h2 class="card-title"><b>{{ $product->name }}</b></h2>
@@ -73,7 +73,7 @@
                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body d-flex justify-content-center align-items-center">
-                <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="img-fluid" style="max-height: 350px; max-width: 100%;">
+                <img src="{{ asset($product->image_path) }}" alt="{{ $product->name }}" class="img-fluid" style="max-height: 350px; max-width: 100%;">
             </div>
                 <div class="modal-footer d-flex justify-content-between">
                         <form action="{{ route('cart.addToCart', $product->id) }}" method="POST" class="w-100 d-flex align-items-center">

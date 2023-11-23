@@ -78,7 +78,7 @@
 
                             <div class="mb-4">
                                 <label for="image" class="block text-gray-700 text-sm font-bold mb-2">Image:</label>
-                                <input type="file" name="image" id="image" accept="image/*" class="w-full border-gray-300 rounded-md shadow-sm">
+                                <input type="file" name="image_path" id="image" accept="image/*" class="w-full border-gray-300 rounded-md shadow-sm">
                                 @error('image')
                                     <div class="text-red-600 text-sm">{{ $message }}</div>
                                 @enderror
