@@ -90,24 +90,24 @@ public function edit(Product $product)
             'price' => 'required|numeric',
             'category' => 'required',
             'quantity' => 'required|numeric',
-            'image' => 'sometimes|image|mimes:jpeg,png,jpg,gif|max:2048', // Use 'sometimes' to allow updating without a new image
+            'image_path' => 'sometimes|image|mimes:jpeg,png,jpg,gif|max:2048', // Use 'sometimes' to allow updating without a new image
         ]);
 
-        
-        // Update product fields
-        $product->name = $validatedData['name'];
-        $product->description = $validatedData['description'];
-        $product->price = $validatedData['price'];
-        $product->category = $validatedData['category'];
-        $product->quantity = $validatedData['quantity'];
+        $imagePath = '';
 
-        // Update image only if a new one is provided
-        if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('product_images', 'public');
-            $productData['image_path'] = $imagePath;
+        if ($request->hasFile('image_path')) {
+            $imagePath = $request->getSchemeAndHttpHost() . '/storage/product_images/' . time() . '.' . $request->image_path->extension();
+            $request->image_path->move(public_path('storage/product_images/'), $imagePath);
         }
+        $product->update([
+            'name' => $request->name,
+            'description' => $request->description,
+            'price' => $request->price,
+            'category' => $request->category,
+            'quantity' => $request->quantity,
+            'image_path' =>$imagePath,
+        ]);
         
-
         $product->save();
 
         return redirect()->route('products.index')->with('success', 'Product updated successfully!');
