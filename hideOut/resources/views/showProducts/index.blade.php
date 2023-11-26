@@ -29,7 +29,7 @@
     
     <div class="container mt-4">
     <ul class="nav nav-pills nav-fill `justify-content-center`">
-            @foreach (['allProducts', 'BrandyProducts', 'GinProducts','RumProducts', 'TequilaProducts', 'VodkaProducts', 'WhiskeyProducts', 'PackageProducts'] as $key => $category)
+            @foreach (['allProducts', 'BrandyProducts', 'GinProducts','RumProducts', 'TequilaProducts', 'VodkaProducts', 'WhiskeyProducts',  'PulutanProducts', 'PackageProducts'] as $key => $category)
                 <li class="nav-item">
                     <a class="nav-link {{ $key == 0 ? 'active' : '' }}" data-bs-toggle="tab" href="#{{ $category }}">{{ ucfirst(str_replace('Products', '', $category)) }}</a>
                 </li>
@@ -99,7 +99,7 @@
     </div>
 
 <div class="tab-content">
-    @foreach (['BrandyProducts', 'GinProducts','RumProducts', 'TequilaProducts', 'VodkaProducts', 'WhiskeyProducts', 'PackageProducts'] as $category)
+    @foreach (['BrandyProducts', 'GinProducts','RumProducts', 'TequilaProducts', 'VodkaProducts', 'WhiskeyProducts', 'PulutanProducts', 'PackageProducts'] as $category)
     <div class="tab-pane {{ $loop->first ? 'active' : '' }}" id="{{ $category }}">
     @if ($products && count($products) > 0)
     <div class="row">
@@ -138,7 +138,7 @@
                             <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>  
                         <div class="modal-body d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="img-fluid" style="max-height: 350px; max-width: 100%;">
+                            <img src="{{ asset($product->image_path) }}" alt="{{ $product->name }}" class="img-fluid" style="max-height: 350px; max-width: 100%;">
                         </div>
 
 

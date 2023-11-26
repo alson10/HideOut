@@ -37,7 +37,7 @@
                                     <option value="Vodka">Vodka</option>
                                     <option value="Whiskey">Whiskey</option>
                                     <option value="Pulutan">Pulutan</option>
-                                    <option value="Pulutan">Package</option>
+                                    <option value="Package">Package</option>
                                 </select>
                                 <!-- Validation Error Message (if applicable) -->
                                 @error('category')
